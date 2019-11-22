@@ -17,7 +17,7 @@ startGame();
 
 function startGame() {
   document.querySelector('.endgame').style.display = "none";
-  origBoard = Array.from(Array(9).keys());
+  origBoard = [0,1,2,3,4,5,6,7,8];
   for (var i = 0; i < cells.length; i++) {
     cells[i].innerText = "";
     cells[i].style.removeProperty('background-color');
